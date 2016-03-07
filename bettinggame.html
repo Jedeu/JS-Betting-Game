@@ -3,9 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Place your betteronis</title>
+  <script src="jquery-2.2.1.min.js"></script>
 </head>
 <body>
 
+<h1>Cash moneyz: $100</h1>
+
+<form id="bets-form">
+  Please enter a bet between $5 and $10 (no cents please!) <input type="text" name="bet">
+</form>
+
+<form id="guessing-form">
+  Please guess a number between 1 and 10 (no decimals allowed) <input type="text" name="guess">
+</form>
+
+
+<script>
+  $(function() {
+    $('#bets-form').on('submit', function() {
+      var bet = $('#bets-form :input').val();
+      var amount = $('#guessing-form :input').val();
+    });
+  });
+  
+</script>
 
 </body>
 </html>
