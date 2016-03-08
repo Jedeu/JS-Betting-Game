@@ -1,0 +1,14 @@
+#flash-correct { 
+  display: none; 
+  color:#008000;
+}
+
+#flash-almost {
+  display: none;
+  color: #ffff00;
+}
+
+#flash-incorrect {
+  display: none;
+  color: #ff0000;
+}
