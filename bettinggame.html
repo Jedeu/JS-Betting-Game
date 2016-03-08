@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Place your betteronis</title>
-  <script src="jquery-2.2.1.min.js"></script>
+  <link href="application.css" rel="stylesheet" type="text/css" title="Default Style">
+  
 </head>
 <body>
 
-<h1>Cash moneyz: $100</h1>
+<h1 id="moneyz">Cash moneyz: $<span id="bank">100</span></h1>
 
 <form id="bets-form">
   Please enter a bet between $5 and $10 (no cents please!) <input type="text" name="bet">
@@ -17,16 +18,12 @@
   Please guess a number between 1 and 10 (no decimals allowed) <input type="text" name="guess">
 </form>
 
+<div id="flash-correct">That is correct! You go Glen Coco!</div>
+<div id="flash-almost">Close! You neither gained nor lost money</div>
+<div id="flash-incorrect">Get shrekt m8. You lost moneyz</div>
 
-<script>
-  $(function() {
-    $('#bets-form').on('submit', function() {
-      var bet = $('#bets-form :input').val();
-      var amount = $('#guessing-form :input').val();
-    });
-  });
-  
-</script>
+<script src="jquery-2.2.1.min.js"></script>
+<script src="bettinglogic.js"></script>
 
 </body>
 </html>
