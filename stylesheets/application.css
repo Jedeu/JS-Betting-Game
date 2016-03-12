@@ -5,10 +5,10 @@
 
 @font-face {
   font-family: '8bitoperator';
-  src: url('./fonts/8bitoperator-webfont.eot');
-  src: url('./fonts/8bitoperator-webfont.woff2') format('woff2'),
-       url('./fonts/8bitoperator-webfont.woff') format('woff'),
-       url('./fonts/8bitoperator-webfont.ttf') format('truetype');
+  src: url('../fonts/8bitoperator-webfont.eot');
+  src: url('../fonts/8bitoperator-webfont.woff2') format('woff2'),
+       url('../fonts/8bitoperator-webfont.woff') format('woff'),
+       url('../fonts/8bitoperator-webfont.ttf') format('truetype');
 }
 
 body {
@@ -31,6 +31,7 @@ body {
   z-index:100;
   position:absolute;    
   font-size:24px;
+  color: green;
   display: none;
   left:540px;
   top:540px;
@@ -40,6 +41,7 @@ body {
   z-index:100;
   position:absolute;    
   font-size:24px;
+  color: yellow;
   display: none;
   left:500px;
   top:540px;
@@ -49,6 +51,7 @@ body {
   z-index:100;
   position:absolute;    
   font-size:24px;
+  color: red;
   display: none;
   left:560px;
   top:540px;
