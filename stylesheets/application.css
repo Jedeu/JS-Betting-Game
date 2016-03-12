@@ -1,0 +1,56 @@
+* {
+  font-family: '8bitoperator';
+  color: white;
+}
+
+@font-face {
+  font-family: '8bitoperator';
+  src: url('./fonts/8bitoperator-webfont.eot');
+  src: url('./fonts/8bitoperator-webfont.woff2') format('woff2'),
+       url('./fonts/8bitoperator-webfont.woff') format('woff'),
+       url('./fonts/8bitoperator-webfont.ttf') format('truetype');
+}
+
+body {
+  background-color: black;
+}
+
+#moneyz {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#sans {
+  position: absolute;
+  top: 25%;
+  left: 42%;
+}
+
+#flash-correct { 
+  z-index:100;
+  position:absolute;    
+  font-size:24px;
+  display: none;
+  left:540px;
+  top:540px;
+}
+
+#flash-almost {
+  z-index:100;
+  position:absolute;    
+  font-size:24px;
+  display: none;
+  left:500px;
+  top:540px;
+}
+
+#flash-incorrect {
+  z-index:100;
+  position:absolute;    
+  font-size:24px;
+  display: none;
+  left:560px;
+  top:540px;
+}
+

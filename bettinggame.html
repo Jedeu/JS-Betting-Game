@@ -1,14 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Place your betteronis</title>
-  <link href="application.css" rel="stylesheet" type="text/css" title="Default Style">
-  
+  <link href="stylesheets/application.css" rel="stylesheet" type="text/css" title="Default Style">
 </head>
 <body>
 
-<h1 id="moneyz">Cash moneyz: $<span id="bank">100</span></h1>
+<h3 id="moneyz">Cash moneyz: $<span id="bank">100</span></h3>
 
 <form id="bets-form">
   Please enter a bet between $5 and $10 (no cents please!) <input type="text" name="bet">
@@ -18,6 +18,8 @@
   Please guess a number between 1 and 10 (no decimals allowed) <input type="text" name="guess">
 </form>
 
+<img id="sans" src="./stylesheets/gifs/sans.gif"/>
+
 <div id="flash-correct">That is correct! You go Glen Coco!</div>
 <div id="flash-almost">Close! You neither gained nor lost money</div>
 <div id="flash-incorrect">Get shrekt m8. You lost moneyz</div>
@@ -25,5 +27,10 @@
 <script src="jquery-2.2.1.min.js"></script>
 <script src="bettinglogic.js"></script>
 
+<audio autoplay loop>
+      <source src="./stylesheets/music/undertalemusic.mp3">
+</audio>
+
+</style>
 </body>
 </html>
